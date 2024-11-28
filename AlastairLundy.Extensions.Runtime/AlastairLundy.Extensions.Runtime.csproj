@@ -19,6 +19,7 @@
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PackageIcon>platformkit_logo_512x.jpg</PackageIcon>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
@@ -67,6 +68,14 @@
         <Link>README.md</Link>
           <PackagePath>README.md</PackagePath>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\images\logos\platformkit_logo_512x.jpg">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+        <Link>platformkit_logo_512x.jpg</Link>
+      </None>
     </ItemGroup>
 
 </Project>
